@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         webView = (WebView) findViewById(R.id.webViewId);
-        webView.loadUrl("https://www.google.com/");
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("http://192.168.43.198:3000/view.html");
 
 
 
